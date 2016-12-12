@@ -1,0 +1,3 @@
+geek_hub_shop_homepage:
+    path:     /
+    defaults: { _controller: GeekHubShopBundle:Default:index }

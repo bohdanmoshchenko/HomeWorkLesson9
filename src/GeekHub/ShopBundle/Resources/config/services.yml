@@ -1,0 +1,4 @@
+services:
+#    geek_hub_shop.example:
+#        class: GeekHub\ShopBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
