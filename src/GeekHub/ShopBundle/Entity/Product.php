@@ -33,7 +33,7 @@ class Product
      *
      * @ORM\Column(name="manufacturer", type="integer")
      */
-    private $manufacturer;
+    private $manufacturer_id;
 
     /**
      * @var int
@@ -73,19 +73,19 @@ class Product
     /**
      * @return int
      */
-    public function getManufacturer()
+    public function getManufacturerId()
     {
-        return $this->manufacturer;
+        return $this->manufacturer_id;
     }
 
     /**
-     * @param int $manufacturer
+     * @param int $manufacturer_id
      *
      * @return $this
      */
-    public function setManufacturer($manufacturer)
+    public function setManufacturerId($manufacturer_id)
     {
-        $this->manufacturer = $manufacturer;
+        $this->manufacturer_id = $manufacturer_id;
 
         return $this;
     }
