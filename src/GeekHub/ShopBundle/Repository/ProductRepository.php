@@ -11,4 +11,12 @@ use Doctrine\ORM\EntityRepository;
  */
 class ProductRepository extends EntityRepository
 {
+    function getAllProductsOrderByName()
+    {
+        $query = $this->createQueryBuilder('prod')
+            ->orderBy('prod.name', 'ASC')
+            ->getQuery();
+
+        return $query->getArrayResult();
+    }
 }
