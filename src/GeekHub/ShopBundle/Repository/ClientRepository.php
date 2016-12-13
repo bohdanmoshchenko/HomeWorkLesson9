@@ -11,4 +11,8 @@ use Doctrine\ORM\EntityRepository;
  */
 class ClientRepository extends EntityRepository
 {
+    public function getById($id)
+    {
+        return $this->find($id);
+    }
 }

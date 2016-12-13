@@ -33,7 +33,7 @@ class Product
      *
      * @ORM\Column(name="cathegory_id", type="integer")
      */
-    private $cathegory_id;
+    private $category_id;
 
     /**
      * @var int
@@ -43,9 +43,9 @@ class Product
     private $manufacturer_id;
 
     /**
-     * @var int
+     * @var string
      *
-     * @ORM\Column(name="description", type="integer")
+     * @ORM\Column(name="description", type="string")
      */
     private $description;
 
@@ -80,19 +80,19 @@ class Product
     /**
      * @return int
      */
-    public function getCathegoryId()
+    public function getCategoryId()
     {
-        return $this->cathegory_id;
+        return $this->category_id;
     }
 
     /**
-     * @param int $cathegory_id
+     * @param int $category_id
      *
      * @return $this
      */
-    public function setCathegoryId($cathegory_id)
+    public function setCategoryId($category_id)
     {
-        $this->cathegory_id = $cathegory_id;
+        $this->category_id = $category_id;
 
         return $this;
     }

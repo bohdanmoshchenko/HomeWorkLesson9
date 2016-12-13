@@ -7,10 +7,10 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Cathegory
  *
- * @ORM\Table(name="cathegory")
+ * @ORM\Table(name="category")
  * @ORM\Entity(repositoryClass="GeekHub\ShopBundle\Repository\CathegoryRepository")
  */
-class Cathegory
+class Category
 {
     /**
      * @var int
@@ -22,14 +22,14 @@ class Cathegory
     private $id;
 
     /**
-     * @var int
+     * @var string
      *
-     * @ORM\Column(name="name", type="string", unique="true")
+     * @ORM\Column(name="name", type="string")
      */
     private $name;
 
     /**
-     * @var int
+     * @var string
      *
      * @ORM\Column(name="description", type="string")
      */
@@ -46,7 +46,7 @@ class Cathegory
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getName()
     {
@@ -54,7 +54,7 @@ class Cathegory
     }
 
     /**
-     * @param int $name
+     * @param string $name
      *
      * @return $this
      */
@@ -66,7 +66,7 @@ class Cathegory
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getDescription()
     {
@@ -74,7 +74,7 @@ class Cathegory
     }
 
     /**
-     * @param int $description
+     * @param string $description
      *
      * @return $this
      */

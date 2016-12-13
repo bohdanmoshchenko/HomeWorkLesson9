@@ -24,14 +24,14 @@ class Client
     /**
      * @var string
      *
-     * @ORM\Column(name="login", type="string", length=30, unique="true", nullable="false")
+     * @ORM\Column(name="login", type="string")
      */
     private $login;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="password", type="string", length=50, nullable="false")
+     * @ORM\Column(name="password", type="string")
      */
     private $password;
 

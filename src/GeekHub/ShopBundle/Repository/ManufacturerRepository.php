@@ -11,4 +11,11 @@ use Doctrine\ORM\EntityRepository;
  */
 class ManufacturerRepository extends EntityRepository
 {
+    public function getAllOrderByName()
+    {
+        return $this->createQueryBuilder('m')
+            ->orderBy('m.name', 'ASC')
+            ->getQuery()
+            ->getResult();
+    }
 }

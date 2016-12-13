@@ -24,14 +24,14 @@ class ClientOrder
     /**
      * @var int
      *
-     * @ORM\Column(name="product_id", type="integer", nullable="false")
+     * @ORM\Column(name="product_id", type="integer")
      */
     private $productId;
 
     /**
      * @var int
      *
-     * @ORM\Column(name="client_id", type="integer", nullable="false")
+     * @ORM\Column(name="client_id", type="integer")
      */
     private $clientId;
 

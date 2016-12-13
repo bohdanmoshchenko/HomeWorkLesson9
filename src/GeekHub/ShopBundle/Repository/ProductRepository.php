@@ -11,12 +11,11 @@ use Doctrine\ORM\EntityRepository;
  */
 class ProductRepository extends EntityRepository
 {
-    function getAllProductsOrderByName()
+    public function getAllOrderByName()
     {
-        $query = $this->createQueryBuilder('prod')
-            ->orderBy('prod.name', 'ASC')
-            ->getQuery();
-
-        return $query->getArrayResult();
+        return $this->createQueryBuilder('p')
+            ->orderBy('p.name', 'ASC')
+            ->getQuery()
+            ->getResult();
     }
 }
